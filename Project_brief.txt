@@ -1,4 +1,23 @@
 Genese Solutions
 Supply & Demand Forecasting System for FMCG Producer project.
 
-Paste proejct brief here
+Project Brief: Supply & Demand Forecasting System for FMCG Producer
+
+
+Project Overview:
+We want to develop a supply & demand forecasting system for an FMCG producer with over two decades of historical data. The system will combine the company’s rich internal data (sales, promotions, distribution, inventory, returns, pricing, SKUs, channel/POS data) with external signals  weather, festival/holiday calendars, macroeconomic indicators, competitor activity, geopolitical events, and other relevant drivers  to produce reliable, explainable forecasts across multiple time horizons. The primary goals are to improve forecast accuracy, reduce stockouts and overstocks, optimize inventory and replenishment, and enable scenario planning for production and logistics
+
+
+Key Objectives: 
+    • Build a scalable forecasting solution that leverages 20+ years of internal data plus external factors to predict demand at SKU × location granularity for short-, mid-, and long-term horizons. 
+    • Improve operational KPIs: reduce stockouts and excess inventory, increase inventory turns, and improve in-fill/service levels via data-driven replenishment recommendations. 
+    • Provide explainable, auditable forecasts and drivers (feature importance, anomaly detection, what-if scenarios) so business users can trust and act on outputs. 
+    • Integrate forecasts into existing supply-chain/ERP workflows and downstream tools (order generation, production planning, distributor portals, BI dashboards). 
+    • Deploy robust monitoring, alerting, and model-retraining pipelines so forecasts self-heal and adapt to new patterns (promotions, seasonality shifts, geopolitical shocks). 
+    • Design for extensibility so new external data sources (satellite data, social trends, retail promotions feeds) can be added with minimal engineering effort.  
+Scope & Deliverables: 
+    • Data ingestion & storage: central data lake/warehouse that houses historical sales, master data (SKU, pack sizes), promotions, pricing, distribution logs, inventory snapshots, and external data connectors (weather API, festival calendar, macro indicators, news/event feed). 
+    • Data quality & feature engineering: cleaning, deduplication, outlier handling, promotion labeling, lag/rolling features, holiday flags, weather features, price elasticity features. 
+        • Forecast products: daily/weekly/monthly demand forecasts, uncertainty intervals, bias-adjusted replenishment recommendations, promotion uplift estimates, and scenario projections (e.g., extended festival, poor weather). 
+    • Interfaces: interactive BI dashboards (filters by SKU/location/time), scheduled forecast exports (CSV/API) to ERP, and alerting for data issues or demand anomalies. 
+    • MLOps & monitoring: automated retraining pipelines, model performance tracking, drift detection, versioning, and rollback capability.
