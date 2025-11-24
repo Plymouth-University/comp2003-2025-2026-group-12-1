@@ -1,0 +1,83 @@
+Scope
+
+Ingestion & Storage
+
+  Central data lake on Amazon S3 (raw / curated / feature zones).
+
+  Ingest batch historical tables via AWS Glue jobs or AWS DMS (if migrating DB).
+
+  Stream POS/near-real-time events via Amazon Kinesis Data Streams → S3 or Lambda.
+
+  External connectors (weather, festival, macro) ingested with AWS Lambda scheduled by EventBridge.
+
+Catalog & Governance
+
+  Data catalog & schema discovery with AWS Glue Data Catalog (optionally Lake Formation for access control).
+
+  S3 bucket versioning + AWS KMS encryption & fine-grained IAM policies.
+
+Data Quality & Feature Engineering
+
+  Scheduled ETL/transform in AWS Glue (PySpark) or EMR for heavy transforms.
+
+  Feature store or feature table staging in S3 / Amazon Redshift or SageMaker Feature Store.
+
+  Data-quality checks and anomaly flags implemented in Glue/EMR jobs (rules + CloudWatch alerts).
+
+Modeling & Forecasting
+
+  Use Amazon Forecast for baseline/time-series models (fast path) and Amazon SageMaker for custom models (advanced).
+
+  Feature pipelines in SageMaker Pipelines or Glue → store model inputs in Feature Store/S3.
+
+  Explainability with SageMaker Clarify or SHAP via SageMaker notebooks.
+
+Training, Retraining & MLOps
+
+  Automated training & retraining pipelines using SageMaker Pipelines + EventBridge triggers.
+
+  Model registry & versioning with SageMaker Model Registry.
+
+  Model monitoring & drift detection with SageMaker Model Monitor and CloudWatch metrics.
+
+  CI/CD for ML code using CodeCommit / CodeBuild / CodePipeline (optional).
+
+Inference & Integration
+
+  Online inference via SageMaker Real-time Endpoints or serverless inference (Lambda + API Gateway) for low concurrency.
+
+  Batch forecast exports (CSV/Parquet) to S3 via scheduled jobs (Glue / Lambda / Batch).
+
+  ERP/order system integration via secure API endpoints (API Gateway + Lambda) or SFTP to ERP ingestion point.
+
+Replenishment & Scenario Engines
+
+  Replenishment recommendation microservice (Lambda) that consumes forecasts and business rules; outputs orders to ERP.
+
+  Simple scenario runner (e.g., “festival + price drop”) implemented as Lambda/Step Functions that runs forecasts with alternate inputs.
+
+Lightweight UI
+
+  Small web app for operations: React single-page app hosted on S3 + CloudFront.
+
+  Auth with Amazon Cognito.
+
+  UI pages: upload/monitor data jobs, view latest forecasts (table + CSV download), run basic what-if scenarios, view model status & retrain button.
+
+  UI talks to backend APIs (API Gateway → Lambda → S3 / SageMaker).
+
+Monitoring, Alerts & Ops: Operational logs, metrics and alarms via CloudWatch + SNS notifications.
+
+Security & Compliance : Least-privilege IAM roles, VPC endpoints for S3 and Glue, and audit logs in CloudTrail.
+
+Deliverables
+
+  S3 data lake skeleton + sample ingest jobs (Glue + Lambda).
+
+  At least one working forecasting pipeline: (a) ingest → (b) feature prep → (c) train (Forecast or SageMaker) → (d) serve.
+
+  Lightweight React UI with auth that can: show forecasts, trigger retrain, run a scenario, and download CSV.
+
+  Automated retrain trigger and basic model monitor (drift alert).
+
+  README with architecture diagram, deployment steps (IaC like CloudFormation/SAM) and runbook.
