@@ -1,21 +1,21 @@
-location_id,city,region,population,avg_income_index
-LOC_001,City_1,South,63725,0.54
-LOC_002,City_2,East,107177,1.02
-LOC_003,City_3,Central,172194,1.47
-LOC_004,City_4,West,428910,0.69
-LOC_005,City_5,East,336843,1.23
-LOC_006,City_6,Central,486291,1.21
-LOC_007,City_7,East,407833,0.77
-LOC_008,City_8,West,384819,0.75
-LOC_009,City_9,South,483191,1.34
-LOC_010,City_10,North,359824,0.56
-LOC_011,City_11,South,120396,0.75
-LOC_012,City_12,North,347088,0.78
-LOC_013,City_13,Central,382053,1.05
-LOC_014,City_14,Central,238820,0.75
-LOC_015,City_15,East,391030,0.51
-LOC_016,City_16,West,70701,0.54
-LOC_017,City_17,West,128898,0.52
-LOC_018,City_18,South,271227,0.97
-LOC_019,City_19,North,259103,1.15
-LOC_020,City_20,South,327132,1.14
+location_id,city,region,location_type,population,avg_income_index,distribution_tier,storage_capacity_units,cold_storage_available
+LOC_001,London,Greater London,Semi-Urban,184903,1.46,Tier1,35220,1
+LOC_002,Birmingham,Midlands,Semi-Urban,139693,1.18,Tier2,30242,1
+LOC_003,Manchester,North West,Semi-Urban,116195,1.09,Tier3,32913,1
+LOC_004,Leeds,North West,Urban,98500,0.99,Tier2,31546,1
+LOC_005,Glasgow,Scotland,Semi-Urban,157620,0.97,Tier2,40264,1
+LOC_006,Liverpool,North West,Semi-Urban,140365,1.09,Tier1,46696,1
+LOC_007,Bristol,South East,Urban,106532,1.26,Tier2,19793,1
+LOC_008,Sheffield,Midlands,Urban,76779,0.88,Tier1,11835,0
+LOC_009,Edinburgh,Scotland,Semi-Urban,83458,1.16,Tier3,26328,1
+LOC_010,Cardiff,Wales,Urban,79441,0.91,Tier1,17536,0
+LOC_011,Newcastle,North West,Urban,70755,0.94,Tier1,21392,1
+LOC_012,Nottingham,Midlands,Semi-Urban,62063,0.95,Tier2,8679,1
+LOC_013,Southampton,South East,Rural,58992,1.0,Tier3,38671,0
+LOC_014,Leicester,Midlands,Urban,74153,0.9,Tier2,21601,1
+LOC_015,Brighton,South East,Semi-Urban,53669,1.05,Tier3,45284,1
+LOC_016,Oxford,South East,Semi-Urban,52501,1.24,Tier2,15911,0
+LOC_017,Cambridge,South East,Urban,44772,1.25,Tier1,19737,0
+LOC_018,Aberdeen,Scotland,Rural,60775,1.14,Tier3,27429,0
+LOC_019,Swansea,Wales,Semi-Urban,54485,0.89,Tier2,10741,0
+LOC_020,Belfast,North West,Urban,62607,0.91,Tier2,49393,1
