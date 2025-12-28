@@ -1,1 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+
+# Kaggle API Token (NEVER COMMIT THIS)
+kaggle.json
 .kaggle/
+**/kaggle.json
+
+# Data files (optional - uncomment if files are large)
+# data/processed/*.csv
+# data/raw/*.csv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Environment variables
+.env
+.env.local
