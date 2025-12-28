@@ -1,4 +1,0 @@
-Server,Provider,vCPU,RAM (GB),Disk (GB),OS,Monthly Cost
-web-server-prod,AWS,2,4,60,Linux,47.20
-api-server-staging,AWS,1,2,30,Linux,19.85
-db-server-prod,AWS,4,8,100,Linux,65.30
