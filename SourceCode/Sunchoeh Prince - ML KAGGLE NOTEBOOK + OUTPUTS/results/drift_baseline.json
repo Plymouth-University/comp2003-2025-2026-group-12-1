@@ -1,0 +1,287 @@
+{
+  "baseline_stats": {
+    "base_price": {
+      "mean": 271.23114013671875,
+      "std": 136.44834899902344
+    },
+    "cost": {
+      "mean": 167.07106018066406,
+      "std": 85.20751190185547
+    },
+    "shelf_life_days": {
+      "mean": 221.64,
+      "std": 149.9855528578205
+    },
+    "min_order_qty": {
+      "mean": 22.506,
+      "std": 15.926632463318214
+    },
+    "lead_time_days": {
+      "mean": 7.908,
+      "std": 3.671650448642547
+    },
+    "launch_phase_days": {
+      "mean": 180.0,
+      "std": 1.0
+    },
+    "decline_phase_days": {
+      "mean": 20.61,
+      "std": 37.83595458633836
+    },
+    "population_base": {
+      "mean": 82812.099,
+      "std": 30433.667106063924
+    },
+    "income_index_base": {
+      "mean": 0.9897039532661438,
+      "std": 0.18708302080631256
+    },
+    "annual_growth_rate": {
+      "mean": 0.00937080942094326,
+      "std": 0.0042879413813352585
+    },
+    "income_growth_rate": {
+      "mean": 0.00468540471047163,
+      "std": 0.0021439706906676292
+    },
+    "storage_capacity_units": {
+      "mean": 28069.53,
+      "std": 10478.124304475501
+    },
+    "cold_storage_available": {
+      "mean": 0.684,
+      "std": 0.4651455260027343
+    },
+    "price": {
+      "mean": 267.0449523925781,
+      "std": 135.8719024658203
+    },
+    "promo_flag": {
+      "mean": 0.07,
+      "std": 0.2552746857116176
+    },
+    "opening_stock": {
+      "mean": 32266.381,
+      "std": 75287.94168861027
+    },
+    "closing_stock": {
+      "mean": 32263.79,
+      "std": 75304.6214901692
+    },
+    "stockout_flag": {
+      "mean": 0.751,
+      "std": 0.43265018916693676
+    },
+    "waste_spoiled": {
+      "mean": 0.66,
+      "std": 7.843463515559942
+    },
+    "lead_time_actual": {
+      "mean": 7.964,
+      "std": 3.71813508745023
+    },
+    "year": {
+      "mean": 2010.619,
+      "std": 4.15055009198372
+    },
+    "month": {
+      "mean": 6.576,
+      "std": 3.4894699311500594
+    },
+    "day_of_week": {
+      "mean": 2.932,
+      "std": 1.9429748199992585
+    },
+    "day_of_month": {
+      "mean": 15.591,
+      "std": 8.866246631429183
+    },
+    "week_of_year": {
+      "mean": 26.727,
+      "std": 15.217820246443084
+    },
+    "is_weekend": {
+      "mean": 0.264,
+      "std": 0.4410198391212106
+    },
+    "quarter": {
+      "mean": 2.544,
+      "std": 1.1275350705567144
+    },
+    "demand_lag_1": {
+      "mean": 81.408,
+      "std": 656.1734642235621
+    },
+    "demand_lag_7": {
+      "mean": 58.824,
+      "std": 67.67625210588362
+    },
+    "demand_lag_14": {
+      "mean": 61.09,
+      "std": 81.72432174551685
+    },
+    "demand_lag_30": {
+      "mean": 61.273,
+      "std": 95.02583006414268
+    },
+    "demand_roll_mean_7": {
+      "mean": 66.0142822265625,
+      "std": 210.55191040039062
+    },
+    "demand_roll_std_7": {
+      "mean": 38.99131393432617,
+      "std": 213.64041137695312
+    },
+    "demand_roll_mean_14": {
+      "mean": 63.233890533447266,
+      "std": 126.03744506835938
+    },
+    "demand_roll_std_14": {
+      "mean": 38.253883361816406,
+      "std": 172.4505615234375
+    },
+    "demand_roll_mean_30": {
+      "mean": 63.78936004638672,
+      "std": 113.94129180908203
+    },
+    "demand_roll_std_30": {
+      "mean": 39.53087615966797,
+      "std": 141.94935607910156
+    },
+    "days_since_promo": {
+      "mean": 0.0,
+      "std": 1.0
+    },
+    "price_vs_base": {
+      "mean": 0.984114408493042,
+      "std": 0.05896977707743645
+    },
+    "price_change_pct": {
+      "mean": 0.0031090076081454754,
+      "std": 0.08918310701847076
+    },
+    "festival_multiplier": {
+      "mean": 1.0331000089645386,
+      "std": 0.17511360347270966
+    },
+    "festival_duration": {
+      "mean": 0.195,
+      "std": 1.0139048293617123
+    },
+    "avg_temp_c": {
+      "mean": 9.621599197387695,
+      "std": 6.416503429412842
+    },
+    "min_temp_c": {
+      "mean": 6.114099979400635,
+      "std": 5.984593391418457
+    },
+    "max_temp_c": {
+      "mean": 13.13379955291748,
+      "std": 7.016880035400391
+    },
+    "precipitation_mm": {
+      "mean": 0.0,
+      "std": 1.0
+    },
+    "avg_humidity_pct": {
+      "mean": 81.6447982788086,
+      "std": 8.665496826171875
+    },
+    "wind_speed_kmh": {
+      "mean": 14.759099960327148,
+      "std": 6.5922393798828125
+    },
+    "weather_demand_factor": {
+      "mean": 1.0262999534606934,
+      "std": 0.05060505494475365
+    },
+    "competitor_promo_intensity": {
+      "mean": 0.009496999904513359,
+      "std": 0.04196188226342201
+    },
+    "competitor_price_pressure": {
+      "mean": 1.000486969947815,
+      "std": 0.01986726187169552
+    },
+    "month_sin": {
+      "mean": -0.022428203374147415,
+      "std": 0.7101061940193176
+    },
+    "month_cos": {
+      "mean": 0.02366987243294716,
+      "std": 0.7040500044822693
+    },
+    "discount_depth": {
+      "mean": 0.015885619446635246,
+      "std": 0.05896973982453346
+    },
+    "channel_enc": {
+      "mean": 1.001,
+      "std": 0.8195551663376118
+    },
+    "__target__": {
+      "mean": 87.67656707763672,
+      "std": 564.8516235351562
+    }
+  },
+  "critical_features": [
+    "base_price",
+    "cost",
+    "shelf_life_days",
+    "min_order_qty",
+    "lead_time_days",
+    "launch_phase_days",
+    "decline_phase_days",
+    "population_base",
+    "income_index_base",
+    "annual_growth_rate",
+    "income_growth_rate",
+    "storage_capacity_units",
+    "cold_storage_available",
+    "price",
+    "promo_flag",
+    "opening_stock",
+    "closing_stock",
+    "stockout_flag",
+    "waste_spoiled",
+    "lead_time_actual",
+    "year",
+    "month",
+    "day_of_week",
+    "day_of_month",
+    "week_of_year",
+    "is_weekend",
+    "quarter",
+    "demand_lag_1",
+    "demand_lag_7",
+    "demand_lag_14",
+    "demand_lag_30",
+    "demand_roll_mean_7",
+    "demand_roll_std_7",
+    "demand_roll_mean_14",
+    "demand_roll_std_14",
+    "demand_roll_mean_30",
+    "demand_roll_std_30",
+    "days_since_promo",
+    "price_vs_base",
+    "price_change_pct",
+    "festival_multiplier",
+    "festival_duration",
+    "avg_temp_c",
+    "min_temp_c",
+    "max_temp_c",
+    "precipitation_mm",
+    "avg_humidity_pct",
+    "wind_speed_kmh",
+    "weather_demand_factor",
+    "competitor_promo_intensity",
+    "competitor_price_pressure",
+    "month_sin",
+    "month_cos",
+    "discount_depth",
+    "channel_enc"
+  ],
+  "drift_threshold": 0.15,
+  "timestamp": "2026-05-05T03:18:03.140845"
+}

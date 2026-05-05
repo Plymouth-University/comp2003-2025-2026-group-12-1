@@ -1,0 +1,329 @@
+6.0s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+6.0s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+6.0s 3 0.00s - to python to disable frozen modules.
+6.0s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+6.6s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+6.6s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+6.6s 7 0.00s - to python to disable frozen modules.
+6.6s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+16.9s 9 2026-05-05 03:12:28,368 - INFO - SHAP available
+16.9s 10 
+16.9s 11 2026-05-05 03:12:28,368 - INFO - SHAP available
+16.9s 12 All imports successful.
+17.0s 13 DATA_ROOT   : /kaggle/input/datasets/sunchoehprince/fmcgparquet
+17.0s 14 OUTPUT_ROOT : /kaggle/working
+17.0s 15 Horizons    : [1, 7, 14]
+17.0s 16 Memory utilities defined.
+17.0s 17 Metrics functions defined.
+17.0s 18 Stockout correction defined.
+17.1s 19 Calendar and lag feature functions defined.
+17.1s 20 Feature engineering pipeline defined.
+17.1s 21 DriftDetector defined.
+17.2s 22 Visualisation and SHAP functions defined.
+17.2s 23 Training function defined.
+17.2s 24 Main pipeline defined.
+17.2s 25 forecast_only() defined.
+17.3s 26 2026-05-05 03:12:28,699 - INFO - ======================================================================
+17.3s 27 
+17.3s 28 2026-05-05 03:12:28,699 - INFO - ======================================================================
+17.3s 29 2026-05-05 03:12:28,699 - INFO - FMCG TRAINING PIPELINE (RICH FEATURES + OPTIMIZED)
+17.3s 30 
+17.3s 31 2026-05-05 03:12:28,699 - INFO - FMCG TRAINING PIPELINE (RICH FEATURES + OPTIMIZED)
+17.3s 32 2026-05-05 03:12:28,700 - INFO - ======================================================================
+17.3s 33 
+17.3s 34 2026-05-05 03:12:28,700 - INFO - ======================================================================
+17.3s 35 2026-05-05 03:12:28,701 - INFO - Initial memory: 617.4 MB
+17.3s 36 
+17.3s 37 2026-05-05 03:12:28,701 - INFO - Initial memory: 617.4 MB
+17.3s 38 2026-05-05 03:12:28,702 - INFO -
+17.3s 39 Loading data from /kaggle/input/datasets/sunchoehprince/fmcgparquet/daily_timeseries.parquet
+17.3s 40 
+17.3s 41 2026-05-05 03:12:28,702 - INFO -
+17.3s 42 Loading data from /kaggle/input/datasets/sunchoehprince/fmcgparquet/daily_timeseries.parquet
+33.9s 43 2026-05-05 03:12:45,233 - INFO - Memory: 5740.47 MB → 3371.83 MB (41.3% reduction)
+33.9s 44 
+33.9s 45 2026-05-05 03:12:45,233 - INFO - Memory: 5740.47 MB → 3371.83 MB (41.3% reduction)
+33.9s 46 2026-05-05 03:12:45,370 - INFO - Loaded 14,610,000 rows | Memory: 10626.8 MB
+33.9s 47 
+33.9s 48 2026-05-05 03:12:45,370 - INFO - Loaded 14,610,000 rows | Memory: 10626.8 MB
+33.9s 49 2026-05-05 03:12:45,370 - INFO - Applying stockout correction...
+33.9s 50 
+33.9s 51 2026-05-05 03:12:45,370 - INFO - Applying stockout correction...
+61.6s 52 2026-05-05 03:13:12,901 - INFO - Excluded 0 fully censored rows
+61.6s 53 
+61.6s 54 2026-05-05 03:13:12,901 - INFO - Excluded 0 fully censored rows
+62.2s 55 2026-05-05 03:13:13,616 - INFO - Starting feature engineering...
+62.2s 56 
+62.2s 57 2026-05-05 03:13:13,616 - INFO - Starting feature engineering...
+62.2s 58 2026-05-05 03:13:13,617 - INFO - SKU fields already present — skipping
+62.2s 59 
+62.2s 60 2026-05-05 03:13:13,617 - INFO - SKU fields already present — skipping
+62.2s 61 2026-05-05 03:13:13,617 - INFO - Location fields already present — skipping
+62.2s 62 
+62.2s 63 2026-05-05 03:13:13,617 - INFO - Location fields already present — skipping
+66.3s 64 2026-05-05 03:13:17,749 - INFO - Added festival features
+66.3s 65 
+66.3s 66 2026-05-05 03:13:17,749 - INFO - Added festival features
+72.1s 67 2026-05-05 03:13:23,519 - INFO - Added weather features (7 fields)
+72.1s 68 
+72.1s 69 2026-05-05 03:13:23,519 - INFO - Added weather features (7 fields)
+72.1s 70 2026-05-05 03:13:23,519 - INFO - Skipping macro indicators (monthly grain incompatible with daily model)
+72.1s 71 
+72.1s 72 2026-05-05 03:13:23,519 - INFO - Skipping macro indicators (monthly grain incompatible with daily model)
+77.7s 73 2026-05-05 03:13:29,152 - INFO - Added competitor features (joined on ['date'])
+77.7s 74 
+77.7s 75 2026-05-05 03:13:29,152 - INFO - Added competitor features (joined on ['date'])
+80.3s 76 2026-05-05 03:13:31,742 - INFO - Lag features already present — skipping rebuild
+80.3s 77 
+80.3s 78 2026-05-05 03:13:31,742 - INFO - Lag features already present — skipping rebuild
+88.0s 79 2026-05-05 03:13:38,837 - INFO - Feature engineering complete. Shape: (14610000, 73)
+88.0s 80 
+88.0s 81 2026-05-05 03:13:38,837 - INFO - Feature engineering complete. Shape: (14610000, 73)
+90.8s 82 2026-05-05 03:13:42,146 - INFO - Memory: 4179.95 MB → 4179.95 MB (0.0% reduction)
+90.8s 83 
+90.8s 84 2026-05-05 03:13:42,146 - INFO - Memory: 4179.95 MB → 4179.95 MB (0.0% reduction)
+90.8s 85 2026-05-05 03:13:42,277 - INFO - After feature engineering | Memory: 4850.4 MB
+90.8s 86 
+90.8s 87 2026-05-05 03:13:42,277 - INFO - After feature engineering | Memory: 4850.4 MB
+93.6s 88 2026-05-05 03:13:44,985 - INFO - Using 55 features
+93.6s 89 
+93.6s 90 2026-05-05 03:13:44,985 - INFO - Using 55 features
+99.8s 91 2026-05-05 03:13:51,277 - INFO - Trimmed to training columns | Memory: 3317.9 MB
+99.8s 92 
+99.8s 93 2026-05-05 03:13:51,277 - INFO - Trimmed to training columns | Memory: 3317.9 MB
+99.8s 94 2026-05-05 03:13:51,278 - INFO -
+99.8s 95 ======================================================================
+99.8s 96 
+99.9s 97 2026-05-05 03:13:51,278 - INFO -
+99.9s 98 ======================================================================
+99.9s 99 2026-05-05 03:13:51,279 - INFO - TRAINING MULTI-HORIZON MODELS
+99.9s 100 
+99.9s 101 2026-05-05 03:13:51,279 - INFO - TRAINING MULTI-HORIZON MODELS
+99.9s 102 2026-05-05 03:13:51,280 - INFO - ======================================================================
+99.9s 103 
+99.9s 104 2026-05-05 03:13:51,280 - INFO - ======================================================================
+105.3s 105 2026-05-05 03:13:56,772 - INFO -
+105.3s 106 ======================================================================
+105.3s 107 
+105.3s 108 2026-05-05 03:13:56,772 - INFO -
+105.3s 109 ======================================================================
+105.3s 110 2026-05-05 03:13:56,772 - INFO - TRAINING HORIZON h=1 MODEL
+105.3s 111 
+105.3s 112 2026-05-05 03:13:56,772 - INFO - TRAINING HORIZON h=1 MODEL
+105.3s 113 2026-05-05 03:13:56,773 - INFO - ======================================================================
+105.3s 114 
+105.3s 115 2026-05-05 03:13:56,773 - INFO - ======================================================================
+105.5s 116 2026-05-05 03:13:56,775 - INFO - Memory usage: 5993.1 MB
+105.5s 117 
+105.5s 118 2026-05-05 03:13:56,775 - INFO - Memory usage: 5993.1 MB
+117.3s 119 2026-05-05 03:14:08,700 - INFO - Train: 10,223,450 | Val: 2,192,000 | Test: 2,192,000
+117.3s 120 
+117.3s 121 2026-05-05 03:14:08,700 - INFO - Train: 10,223,450 | Val: 2,192,000 | Test: 2,192,000
+118.1s 122 2026-05-05 03:14:09,565 - INFO - Training h=1 model...
+118.1s 123 
+118.1s 124 2026-05-05 03:14:09,565 - INFO - Training h=1 model...
+351.2s 125 2026-05-05 03:18:02,617 - INFO - --- Metrics: H1 Test Set ---
+351.2s 126 
+351.2s 127 2026-05-05 03:18:02,617 - INFO - --- Metrics: H1 Test Set ---
+351.2s 128 2026-05-05 03:18:02,618 - INFO -   WMAPE:  28.60%  (primary metric)
+351.2s 129 
+351.2s 130 2026-05-05 03:18:02,618 - INFO -   WMAPE:  28.60%  (primary metric)
+351.2s 131 2026-05-05 03:18:02,618 - INFO -   MAE:    20.58
+351.2s 132 
+351.2s 133 2026-05-05 03:18:02,618 - INFO -   MAE:    20.58
+351.2s 134 2026-05-05 03:18:02,619 - INFO -   RMSE:   104.98
+351.2s 135 
+351.2s 136 2026-05-05 03:18:02,619 - INFO -   RMSE:   104.98
+351.2s 137 2026-05-05 03:18:02,619 - INFO -   MAPE:   25.08%  (non-zero rows only)
+351.2s 138 
+351.2s 139 2026-05-05 03:18:02,619 - INFO -   MAPE:   25.08%  (non-zero rows only)
+351.2s 140 2026-05-05 03:18:02,620 - INFO -   R²:     0.8141
+351.2s 141 
+351.2s 142 2026-05-05 03:18:02,620 - INFO -   R²:     0.8141
+351.2s 143 2026-05-05 03:18:02,620 - INFO -   Bias:   -0.48  (+ = under-forecast)
+351.2s 144 
+351.2s 145 2026-05-05 03:18:02,620 - INFO -   Bias:   -0.48  (+ = under-forecast)
+351.2s 146 2026-05-05 03:18:02,621 - INFO -   Over:   70.7%  Under: 29.3%
+351.2s 147 
+351.2s 148 2026-05-05 03:18:02,621 - INFO -   Over:   70.7%  Under: 29.3%
+351.2s 149 2026-05-05 03:18:02,645 - INFO - ✓ Model saved to /kaggle/working/model_h1.txt
+351.2s 150 
+351.2s 151 2026-05-05 03:18:02,645 - INFO - ✓ Model saved to /kaggle/working/model_h1.txt
+351.7s 152 2026-05-05 03:18:03,128 - INFO - Capturing baseline statistics...
+351.7s 153 
+351.7s 154 2026-05-05 03:18:03,128 - INFO - Capturing baseline statistics...
+351.7s 155 2026-05-05 03:18:03,140 - INFO - ✓ Baseline captured for 56 features
+351.7s 156 
+351.7s 157 2026-05-05 03:18:03,140 - INFO - ✓ Baseline captured for 56 features
+351.7s 158 2026-05-05 03:18:03,141 - INFO - ✓ Baseline saved to /kaggle/working/drift_baseline.json
+351.7s 159 
+351.7s 160 2026-05-05 03:18:03,141 - INFO - ✓ Baseline saved to /kaggle/working/drift_baseline.json
+351.7s 161 2026-05-05 03:18:03,142 - INFO - ✓ Drift baseline captured
+351.7s 162 
+351.7s 163 2026-05-05 03:18:03,142 - INFO - ✓ Drift baseline captured
+353.4s 164 2026-05-05 03:18:04,815 - INFO - Generating SHAP report...
+353.4s 165 
+353.4s 166 2026-05-05 03:18:04,815 - INFO - Generating SHAP report...
+355.3s 167 2026-05-05 03:18:06,581 - INFO - ✓ SHAP report complete
+355.3s 168 
+355.3s 169 2026-05-05 03:18:06,581 - INFO - ✓ SHAP report complete
+355.3s 170 2026-05-05 03:18:06,719 - INFO -
+355.3s 171 ======================================================================
+355.3s 172 
+355.3s 173 2026-05-05 03:18:06,719 - INFO -
+355.3s 174 ======================================================================
+355.3s 175 2026-05-05 03:18:06,720 - INFO - TRAINING HORIZON h=7 MODEL
+355.3s 176 
+355.3s 177 2026-05-05 03:18:06,720 - INFO - TRAINING HORIZON h=7 MODEL
+355.3s 178 2026-05-05 03:18:06,721 - INFO - ======================================================================
+355.3s 179 
+355.3s 180 2026-05-05 03:18:06,721 - INFO - ======================================================================
+355.4s 181 2026-05-05 03:18:06,722 - INFO - Memory usage: 7005.0 MB
+355.4s 182 
+355.4s 183 2026-05-05 03:18:06,722 - INFO - Memory usage: 7005.0 MB
+366.8s 184 2026-05-05 03:18:18,268 - INFO - Train: 10,216,000 | Val: 2,190,000 | Test: 2,190,000
+366.8s 185 
+366.8s 186 2026-05-05 03:18:18,268 - INFO - Train: 10,216,000 | Val: 2,190,000 | Test: 2,190,000
+367.7s 187 2026-05-05 03:18:19,081 - INFO - Training h=7 model...
+367.7s 188 
+367.7s 189 2026-05-05 03:18:19,081 - INFO - Training h=7 model...
+528.6s 190 2026-05-05 03:21:00,037 - INFO - --- Metrics: H7 Test Set ---
+528.6s 191 
+528.6s 192 2026-05-05 03:21:00,037 - INFO - --- Metrics: H7 Test Set ---
+528.6s 193 2026-05-05 03:21:00,038 - INFO -   WMAPE:  32.29%  (primary metric)
+528.6s 194 
+528.6s 195 2026-05-05 03:21:00,038 - INFO -   WMAPE:  32.29%  (primary metric)
+528.6s 196 2026-05-05 03:21:00,039 - INFO -   MAE:    23.24
+528.6s 197 
+528.6s 198 2026-05-05 03:21:00,039 - INFO -   MAE:    23.24
+528.6s 199 2026-05-05 03:21:00,040 - INFO -   RMSE:   155.14
+528.6s 200 
+528.6s 201 2026-05-05 03:21:00,040 - INFO -   RMSE:   155.14
+528.6s 202 2026-05-05 03:21:00,041 - INFO -   MAPE:   27.99%  (non-zero rows only)
+528.6s 203 
+528.6s 204 2026-05-05 03:21:00,041 - INFO -   MAPE:   27.99%  (non-zero rows only)
+528.6s 205 2026-05-05 03:21:00,042 - INFO -   R²:     0.5944
+528.6s 206 
+528.6s 207 2026-05-05 03:21:00,042 - INFO -   R²:     0.5944
+528.6s 208 2026-05-05 03:21:00,042 - INFO -   Bias:   +0.97  (+ = under-forecast)
+528.6s 209 
+528.6s 210 2026-05-05 03:21:00,042 - INFO -   Bias:   +0.97  (+ = under-forecast)
+528.6s 211 2026-05-05 03:21:00,043 - INFO -   Over:   67.3%  Under: 32.7%
+528.6s 212 
+528.6s 213 2026-05-05 03:21:00,043 - INFO -   Over:   67.3%  Under: 32.7%
+528.6s 214 2026-05-05 03:21:00,060 - INFO - ✓ Model saved to /kaggle/working/model_h7.txt
+528.6s 215 
+528.6s 216 2026-05-05 03:21:00,060 - INFO - ✓ Model saved to /kaggle/working/model_h7.txt
+528.9s 217 2026-05-05 03:21:00,362 - INFO -
+528.9s 218 ======================================================================
+528.9s 219 
+528.9s 220 2026-05-05 03:21:00,362 - INFO -
+528.9s 221 ======================================================================
+528.9s 222 2026-05-05 03:21:00,363 - INFO - TRAINING HORIZON h=14 MODEL
+528.9s 223 
+528.9s 224 2026-05-05 03:21:00,363 - INFO - TRAINING HORIZON h=14 MODEL
+528.9s 225 2026-05-05 03:21:00,364 - INFO - ======================================================================
+528.9s 226 
+528.9s 227 2026-05-05 03:21:00,364 - INFO - ======================================================================
+529.1s 228 2026-05-05 03:21:00,365 - INFO - Memory usage: 7394.4 MB
+529.1s 229 
+529.1s 230 2026-05-05 03:21:00,365 - INFO - Memory usage: 7394.4 MB
+540.2s 231 2026-05-05 03:21:11,628 - INFO - Train: 10,206,000 | Val: 2,188,000 | Test: 2,188,000
+540.2s 232 
+540.2s 233 2026-05-05 03:21:11,628 - INFO - Train: 10,206,000 | Val: 2,188,000 | Test: 2,188,000
+541.0s 234 2026-05-05 03:21:12,397 - INFO - Training h=14 model...
+541.0s 235 
+541.0s 236 2026-05-05 03:21:12,397 - INFO - Training h=14 model...
+689.4s 237 2026-05-05 03:23:40,810 - INFO - --- Metrics: H14 Test Set ---
+689.4s 238 
+689.4s 239 2026-05-05 03:23:40,810 - INFO - --- Metrics: H14 Test Set ---
+689.4s 240 2026-05-05 03:23:40,811 - INFO -   WMAPE:  33.63%  (primary metric)
+689.4s 241 
+689.4s 242 2026-05-05 03:23:40,811 - INFO -   WMAPE:  33.63%  (primary metric)
+689.4s 243 2026-05-05 03:23:40,812 - INFO -   MAE:    24.21
+689.4s 244 
+689.4s 245 2026-05-05 03:23:40,812 - INFO -   MAE:    24.21
+689.4s 246 2026-05-05 03:23:40,812 - INFO -   RMSE:   182.30
+689.4s 247 
+689.4s 248 2026-05-05 03:23:40,812 - INFO -   RMSE:   182.30
+689.4s 249 2026-05-05 03:23:40,813 - INFO -   MAPE:   29.09%  (non-zero rows only)
+689.4s 250 
+689.4s 251 2026-05-05 03:23:40,813 - INFO -   MAPE:   29.09%  (non-zero rows only)
+689.4s 252 2026-05-05 03:23:40,813 - INFO -   R²:     0.4405
+689.4s 253 
+689.4s 254 2026-05-05 03:23:40,813 - INFO -   R²:     0.4405
+689.4s 255 2026-05-05 03:23:40,814 - INFO -   Bias:   +1.95  (+ = under-forecast)
+689.4s 256 
+689.4s 257 2026-05-05 03:23:40,814 - INFO -   Bias:   +1.95  (+ = under-forecast)
+689.4s 258 2026-05-05 03:23:40,814 - INFO -   Over:   67.6%  Under: 32.4%
+689.4s 259 
+689.4s 260 2026-05-05 03:23:40,814 - INFO -   Over:   67.6%  Under: 32.4%
+689.4s 261 2026-05-05 03:23:40,828 - INFO - ✓ Model saved to /kaggle/working/model_h14.txt
+689.4s 262 
+689.4s 263 2026-05-05 03:23:40,828 - INFO - ✓ Model saved to /kaggle/working/model_h14.txt
+689.7s 264 2026-05-05 03:23:41,137 - INFO - ✓ Metrics summary saved.
+689.7s 265 
+689.7s 266 2026-05-05 03:23:41,137 - INFO - ✓ Metrics summary saved.
+691.3s 267 2026-05-05 03:23:42,690 - INFO - ✓ Performance plots saved to /kaggle/working/performance_plots
+691.3s 268 
+691.3s 269 2026-05-05 03:23:42,690 - INFO - ✓ Performance plots saved to /kaggle/working/performance_plots
+691.3s 270 2026-05-05 03:23:42,691 - INFO -
+691.3s 271 ======================================================================
+691.3s 272 
+691.3s 273 2026-05-05 03:23:42,691 - INFO -
+691.3s 274 ======================================================================
+691.3s 275 2026-05-05 03:23:42,691 - INFO - MULTI-HORIZON TRAINING COMPLETE
+691.3s 276 
+691.3s 277 2026-05-05 03:23:42,691 - INFO - MULTI-HORIZON TRAINING COMPLETE
+691.3s 278 2026-05-05 03:23:42,692 - INFO - ======================================================================
+691.3s 279 
+691.3s 280 2026-05-05 03:23:42,692 - INFO - ======================================================================
+691.3s 281 2026-05-05 03:23:42,692 - INFO -   h= 1 day: WMAPE = 28.60%
+691.3s 282 
+691.3s 283 2026-05-05 03:23:42,692 - INFO -   h= 1 day: WMAPE = 28.60%
+691.3s 284 2026-05-05 03:23:42,693 - INFO -   h= 7 day: WMAPE = 32.29%
+691.3s 285 
+691.3s 286 2026-05-05 03:23:42,693 - INFO -   h= 7 day: WMAPE = 32.29%
+691.3s 287 2026-05-05 03:23:42,694 - INFO -   h=14 day: WMAPE = 33.63%
+691.3s 288 
+691.3s 289 2026-05-05 03:23:42,694 - INFO -   h=14 day: WMAPE = 33.63%
+691.3s 290 2026-05-05 03:23:42,695 - INFO - Memory usage: 7843.5 MB
+691.3s 291 
+691.3s 292 2026-05-05 03:23:42,695 - INFO - Memory usage: 7843.5 MB
+691.7s 293 2026-05-05 03:23:42,696 - INFO - ======================================================================
+691.7s 294 
+691.7s 295 2026-05-05 03:23:42,696 - INFO - ======================================================================
+691.7s 296 2026-05-05 03:23:43,156 - INFO -
+691.7s 297 ======================================================================
+691.7s 298 
+691.7s 299 2026-05-05 03:23:43,156 - INFO -
+691.7s 300 ======================================================================
+691.7s 301 2026-05-05 03:23:43,157 - INFO - PIPELINE COMPLETE
+691.7s 302 
+691.7s 303 2026-05-05 03:23:43,157 - INFO - PIPELINE COMPLETE
+691.7s 304 2026-05-05 03:23:43,158 - INFO - ======================================================================
+691.7s 305 
+691.7s 306 2026-05-05 03:23:43,158 - INFO - ======================================================================
+691.7s 307 2026-05-05 03:23:43,159 - INFO -   h= 1 day: WMAPE = 28.60%
+691.7s 308 
+691.7s 309 2026-05-05 03:23:43,159 - INFO -   h= 1 day: WMAPE = 28.60%
+691.7s 310 2026-05-05 03:23:43,159 - INFO -   h= 7 day: WMAPE = 32.29%
+691.7s 311 
+691.7s 312 2026-05-05 03:23:43,159 - INFO -   h= 7 day: WMAPE = 32.29%
+691.7s 313 2026-05-05 03:23:43,160 - INFO -   h=14 day: WMAPE = 33.63%
+691.7s 314 
+691.7s 315 2026-05-05 03:23:43,160 - INFO -   h=14 day: WMAPE = 33.63%
+691.7s 316 2026-05-05 03:23:43,162 - INFO - Final memory: 1991.5 MB
+691.7s 317 
+691.7s 318 2026-05-05 03:23:43,162 - INFO - Final memory: 1991.5 MB
+691.7s 319 2026-05-05 03:23:43,163 - INFO - ======================================================================
+691.7s 320 
+691.7s 321 2026-05-05 03:23:43,163 - INFO - ======================================================================
+695.5s 322 /usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+695.5s 323 cells[i][c] = re.sub('\\\\\|', '|', cell)
+695.6s 324 /usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+695.6s 325 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+696.2s 326 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+696.5s 327 [NbConvertApp] Writing 75610 bytes to __notebook__.ipynb
+698.8s 328 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+699.8s 329 [NbConvertApp] Writing 486891 bytes to __results__.html
